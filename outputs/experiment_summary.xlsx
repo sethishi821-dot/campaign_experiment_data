@@ -1,0 +1,66 @@
+## Task 5: Create Experiment Summary
+
+### File Location
+
+`outputs/experiment_summary.xlsx`
+
+### Objective
+
+Create a summarized comparison of experiment performance between the **Control** and **Treatment** groups using business and conversion metrics.
+
+### Summary Metrics Included
+
+The workbook compares the following metrics across both experiment groups:
+
+| Metric                             | Calculation                                  |
+| ---------------------------------- | -------------------------------------------- |
+| User count                         | Number of users in each group                |
+| Landing page visit rate            | Users who visited landing page ÷ total users |
+| Trial start rate                   | Users who started trial ÷ total users        |
+| Onboarding completion rate         | Users who completed onboarding ÷ total users |
+| Paid conversion rate               | Users converted to paid ÷ total users        |
+| Average revenue per user           | Total revenue ÷ total users                  |
+| Average revenue per converted user | Revenue ÷ converted users                    |
+| Refund rate                        | Refund requests ÷ total users                |
+| Support ticket rate                | Users with support tickets ÷ total users     |
+| Average engagement score           | Mean engagement score by group               |
+| Average days to convert            | Average conversion days for converted users  |
+
+---
+
+### Segment Analysis
+
+Additional analysis was completed across multiple user segments to identify performance differences.
+
+Segments included:
+
+* Region
+* Device Type
+* Traffic Source
+* Plan Type
+
+Segment-level metrics analyzed:
+
+* Paid Conversion Rate
+* Average Revenue per User
+* Trial Start Rate
+
+---
+
+### Workbook Structure
+
+| Sheet Name                | Description                                                 |
+| ------------------------- | ----------------------------------------------------------- |
+| `overall_summary`         | Control vs Treatment comparison across all required metrics |
+| `region_analysis`         | Segment breakdown by region                                 |
+| `device_type_analysis`    | Segment breakdown by device type                            |
+| `traffic_source_analysis` | Segment breakdown by traffic source                         |
+| `plan_type_analysis`      | Segment breakdown by subscription plan                      |
+
+### Result
+
+The output workbook provides a consolidated experiment performance view and supports deeper segment-level evaluation for decision making.
+
+### Output
+
+`outputs/experiment_summary.xlsx`
