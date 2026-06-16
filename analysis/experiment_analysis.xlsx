@@ -1,0 +1,96 @@
+## Task 4: Clean and Prepare Experiment Data
+
+### File Location
+
+`analysis/experiment_analysis.xlsx`
+
+### Objective
+
+Prepare the experiment dataset for analysis by validating data quality, correcting issues where necessary, and documenting all preprocessing decisions.
+
+### Data Validation and Cleaning Steps
+
+#### 1. Missing Values
+
+Checked all columns for null or blank values.
+
+Handling:
+
+* Filled categorical missing values using the most frequent category (mode).
+* Filled numerical missing values using the median where appropriate.
+* Preserved intentionally empty values where they represented non-applicable outcomes.
+
+---
+
+#### 2. Group Counts
+
+Verified user allocation across experiment groups.
+
+Purpose:
+
+* Ensure experiment groups remain reasonably balanced.
+* Confirm no records were lost during preprocessing.
+
+Action:
+
+* No structural adjustment required.
+
+---
+
+#### 3. Duplicate User IDs
+
+Validated uniqueness of `user_id`.
+
+Handling:
+
+* Removed duplicate user records.
+* Retained the first valid occurrence for analysis consistency.
+
+---
+
+#### 4. Invalid Binary Values
+
+Validated binary fields to ensure values contained only:
+
+* `0` = No
+* `1` = Yes
+
+Handling:
+
+* Corrected invalid values where detected.
+* Confirmed final dataset contains valid binary encoding only.
+
+---
+
+#### 5. Revenue Outliers
+
+Reviewed revenue distribution to identify extreme values.
+
+Method:
+
+* Interquartile Range (IQR) approach.
+
+Handling:
+
+* Outliers were capped to reduce distortion while preserving observations.
+
+---
+
+#### 6. Segment Distribution Across Groups
+
+Checked whether user segments remained evenly distributed across experiment groups.
+
+Handling:
+
+* Verified distribution consistency.
+* No rebalancing applied.
+
+### Output
+
+Final cleaned dataset saved as:
+
+`analysis/experiment_analysis.xlsx`
+
+### Result
+
+The dataset is prepared and ready for experiment analysis and KPI evaluation.
