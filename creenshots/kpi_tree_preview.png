@@ -1,0 +1,34 @@
+## Task 3: KPI Tree
+
+### Objective
+Create a KPI tree that breaks down the selected North Star metric into measurable business drivers and supporting metrics.
+
+### North Star Metric
+- **30-Day Paid Revenue Growth**
+
+### KPI Structure
+
+#### Primary Drivers
+1. **Acquisition**
+   - Landing Page Visits
+   - Traffic Quality
+
+2. **Activation**
+   - Trial Starts
+   - Onboarding Completion
+
+3. **Conversion**
+   - Paid Conversion Rate
+   - Average Revenue per User (ARPU)
+
+### Guardrail Metrics
+- Refund Request Rate
+- Support Tickets per User
+- Engagement Score
+
+### Output Files
+- KPI Tree Diagram: `outputs/kpi_tree.png`
+- Screenshot Preview: `screenshots/kpi_tree_preview.png`
+
+### Notes
+The KPI tree was designed to show how the North Star metric can be influenced through key business drivers while maintaining quality through guardrail metrics.
