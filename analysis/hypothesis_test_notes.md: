@@ -1,0 +1,114 @@
+# Task 6: Hypothesis Test Notes
+
+## Objective
+
+Evaluate whether the experiment treatment produces a meaningful improvement in business performance compared with the control group.
+
+---
+
+## Metric Being Tested
+
+**Paid Conversion Rate**
+
+### Definition
+
+Paid Conversion Rate = Users Converted to Paid ÷ Total Users
+
+---
+
+## Reason for Choosing This Metric
+
+Paid conversion rate was selected because it directly reflects the business objective of increasing revenue growth and aligns with the North Star metric.
+
+This metric measures whether users exposed to the treatment are more likely to become paying customers compared with users in the control group.
+
+An increase in conversion rate creates a measurable business impact through revenue generation and customer acquisition efficiency.
+
+---
+
+## Null Hypothesis (H₀)
+
+There is **no statistically significant difference** in paid conversion rate between the Treatment group and the Control group.
+
+[
+H_0: p_{treatment} = p_{control}
+]
+
+---
+
+## Alternative Hypothesis (H₁)
+
+There is a **statistically significant difference** in paid conversion rate between the Treatment group and the Control group.
+
+[
+H_1: p_{treatment} \neq p_{control}
+]
+
+---
+
+## Test Direction
+
+**Two-tailed test**
+
+### Reason
+
+The analysis checks whether the treatment changes conversion performance in either direction:
+
+* Improvement in conversion rate
+* Decline in conversion rate
+
+A two-tailed approach ensures both outcomes are evaluated objectively.
+
+---
+
+## Significance Level
+
+[
+\alpha = 0.05
+]
+
+Decision threshold:
+
+* **p-value < 0.05 → Reject H₀**
+* **p-value ≥ 0.05 → Fail to reject H₀**
+
+---
+
+## Interpretation Logic
+
+### If H₀ is Rejected
+
+There is sufficient statistical evidence that the treatment produced a meaningful change in paid conversion rate.
+
+Business decision:
+
+* Consider scaling or launching the treatment.
+* Continue monitoring guardrail metrics such as refunds, support load, and engagement.
+
+### If H₀ is Not Rejected
+
+There is insufficient evidence to conclude that the treatment changed conversion performance.
+
+Business decision:
+
+* Retain the current experience.
+* Investigate alternative experiments or optimization opportunities.
+
+---
+
+## Expected Decision Framework
+
+Primary Success Metric:
+
+* Paid Conversion Rate
+
+Guardrail Metrics:
+
+* Refund Rate
+* Support Ticket Rate
+* Average Engagement Score
+
+A treatment should only be adopted if:
+
+1. Conversion performance improves.
+2. Guardrail metrics remain stable or improve.
